@@ -1,0 +1,159 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: proxima-nova, Noto Sans KR, sans-serif;
+}
+
+.c-logo {
+    padding-top: 60px;
+}
+
+.c-logo h1 {
+    font-size: 100px;
+    font-weight: 900;
+}
+
+@media ( max-width: 768px ) {
+    .c-logo h1 {
+        font-size: 70px;
+    }
+}
+
+.c-logo p {
+    margin-top: -80px;
+    font-size: 18px;
+    color: #797979;
+}
+
+@media ( max-width: 768px ) {
+    .c-logo p {
+        margin-top: -20px;
+    }
+}
+
+.c-statue {
+    padding-top: 50px;
+}
+
+.c-statue p {
+    font-size: 14px;
+    color: #797979;
+}
+
+.c-statue .row {
+    margin-top: -20px;
+}
+
+.c-statue .row h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.c-statue .row .c1 {
+    color: #e06377;
+}
+
+.c-statue .row .c2 {
+    color: #c83349;
+}
+
+.c-statue .row .c3 {
+    color: #d9ad7c;
+}
+
+.c-statue .row p {
+    margin-top: -20px;
+    text-align: center;
+    color: #797979;
+}
+
+.c-rules {
+    padding-top: 50px;
+}
+
+.c-rules p {
+    font-size: 14px;
+    color: #797979;
+}
+
+.c-rules .row h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.c-rules .row p {
+    margin-top: -20px;
+    text-align: center;
+    color: #797979;
+}
+
+.c-rules h2 {
+    font-size: 150px;
+    color: #b8a9c9;
+    text-align: center;
+}
+
+.c-rules h3 {
+    margin-top: -40px;
+    font-size: 14px;
+    color: #797979;
+    text-align: center;
+    font-weight: 400;
+}
+
+.c-copyrights {
+    padding-top: 50px;
+}
+
+.c-copyrights p {
+    font-size: 20px;
+}
+
+.c-copyrights i {
+    padding-right: 10px;
+    color: #797979;
+    font-size: 10px;
+}
+
+.c-copyrights .br {
+    padding-left: 10px;
+}
+
+.c-copyrights a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.c-copyrights a:hover {
+    text-decoration: underline;
+}
+
+.c-information {
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.c-information p {
+    font-size: 20px;
+}
+
+.c-information i {
+    padding-right: 10px;
+    color: #797979;
+    font-size: 10px;
+}
+
+.c-information .br {
+    padding-left: 10px;
+}
+
+.c-information a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.c-information a:hover {
+    text-decoration: underline;
+}

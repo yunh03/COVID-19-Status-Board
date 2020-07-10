@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/favicon.png">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/covid.css">
+    <link rel="stylesheet" href="assets/grid.css">
+    <script src="assets/covid.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/nnh2zwy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9f76cf2331.js" crossorigin="anonymous"></script>
+    <title>COVID-19 현황</title>
+</head>
+<body onload="load()">
+    <div class="container">
+        <section class="c-logo">
+            <h1>C<i class="fas fa-virus"></i>VID-19</h1>
+            <p>실시간 COVID-19 현황을 표시합니다.</p>
+        </section>
+        <section class="c-statue">
+            <h1>🇰🇷 국내 피해 현황</h1>
+            <p><span id="nowdate">🖐 업데이트 중</span></p>
+            <div class="row">
+                <div class="col-sm">
+                    <h1 class="c1"><span id="covid1">🖐</span></h1>
+                    <p>확진자 수<span id="covid11"></span></p>
+                </div>
+                <div class="col-sm">
+                    <h1 class="c2"><span id="covid2">🖐</span></h1>
+                    <p>사망자 수<span id="covid22"></span></p>
+                </div>
+                <div class="col-sm">
+                    <h1 class="c3"><span id="covid3">🖐</span></h1>
+                    <p>완치자 수<span id="covid33"></span></p>
+                </div>
+            </div>
+        </section>
+        <section class="c-rules">
+            <h1>😷 기본 방역 수칙</h1>
+            <p>개인과 모두를 위한 기본 방역 수칙</p>
+            <div class="row">
+                <div class="col-sm">
+                    <h1><i class="fas fa-hands-wash"></i></h1>
+                    <p>손 씻기 생활화하기</p>
+                </div>
+                <div class="col-sm">
+                    <h1><i class="fas fa-head-side-mask"></i></h1>
+                    <p>마스크 착용 생활화하기</p>
+                </div>
+                <div class="col-sm">
+                    <h1><i class="fas fa-bed"></i></h1>
+                    <p>이상 증상 시 휴식하기</p>
+                </div>
+                <div class="col-sm">
+                    <h1>1339</h1>
+                    <p>본인과 타인을 위해 증상 발현 시 상담하기</p>
+                </div>
+            </div>
+        </section>
+        <section class="c-copyrights">
+            <h1>📚 출처</h1>
+            <p>서버 제공: <span class="br"></span><a href="https://aws.amazon.com/ko/" target="_blank"><i class="fas fa-external-link-alt"></i>AWS(Amazon Web Service)</a></p>
+            <p>현황 정보: <span class="br"></span><a href="http://ncov.mohw.go.kr/" target="_blank"><i class="fas fa-external-link-alt"></i>중앙재난대책본부</a></p>
+            <p>아이콘, 폰트: <span class="br"></span><a href="https://fontawesome.com/" target="_blank"><i class="fas fa-external-link-alt"></i>FontAwesome</a>, <a href="https://apple.com/kr" target="_blank"><i class="fas fa-external-link-alt"></i>Apple</a>, <a href="https://fonts.adobe.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Adobe Typekit</a></p>
+        </section>
+        <section class="c-information">
+            <h1>📮 정보</h1>
+            <p>제작자: <span class="br"></span>Yun Hwan Jeon</p>
+            <p>이메일: <span class="br"></span><a href="mailto:yunsol267@gmail.com">yunsol267@gmail.com</a></p>
+            <p>깃허브: <span class="br"></span><a href="https://github.com/yunh03" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub</a></p>
+        </section>
+    </div>
+</body>
+</html>
