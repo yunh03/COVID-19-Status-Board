@@ -4,7 +4,7 @@ function load() {
         var mydata = JSON.parse(this.responseText);
 
         document.getElementById("nowdate").innerHTML =
-        currentDate.getMonth() + "월 " + currentDate.getDate() + "일 " + currentDate.getHours() + "시 " + currentDate.getMinutes() + "분 " + "업데이트 됨";
+        currentDate.getMonth() + 1 + "월 " + currentDate.getDate() + "일 " + currentDate.getHours() + "시 " + currentDate.getMinutes() + "분 " + "업데이트 됨";
 
         document.getElementById("covid1").innerHTML =
         mydata['covid'][0].num;
