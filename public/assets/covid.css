@@ -33,40 +33,86 @@ body {
     }
 }
 
-.c-statue {
+.c-status {
     padding-top: 50px;
 }
 
-.c-statue p {
+.c-status p {
     font-size: 14px;
     color: #797979;
 }
 
-.c-statue .row {
+.c-status .row {
     margin-top: -20px;
 }
 
-.c-statue .row h1 {
+.c-status .row h1 {
     text-align: center;
     font-size: 60px;
 }
 
-.c-statue .row .c1 {
+.c-status .row .c1 {
     color: #e06377;
 }
 
-.c-statue .row .c2 {
+.c-status .row .c2 {
     color: #c83349;
 }
 
-.c-statue .row .c3 {
+.c-status .row .c3 {
     color: #d9ad7c;
 }
 
-.c-statue .row p {
+.c-status .row p {
     margin-top: -20px;
     text-align: center;
     color: #797979;
+}
+
+.c-emergency {
+    padding-top: 50px;
+}
+
+.c-emergency p {
+    font-size: 14px;
+    color: #797979;
+}
+
+.c-emergency .msg-box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0f0f0f;
+    border-radius: 5px;
+}
+
+.c-emergency .msg-box h1 {
+    font-size: 20px;
+}
+
+.c-emergency .msg-box h2 {
+    font-size: 14px;
+    color: #797979;
+    font-weight: 400;
+}
+
+.c-emergency h3 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 15px;
+}
+
+.c-emergency a {
+    color: #797979;
+    text-decoration: none;
+}
+
+.c-emergency a:hover {
+    text-decoration: underline;
+}
+
+.c-emergency i {
+    padding-left: 10px;
 }
 
 .c-rules {
