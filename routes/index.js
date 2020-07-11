@@ -24,4 +24,24 @@ router.get('/status.json', function(req, res, next) {
   })
 });
 
+router.get('/emergency.json', function(req, res, next) {
+  let url = 'https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EA%B8%B4%EA%B8%89%EC%9E%AC%EB%82%9C%EB%AC%B8%EC%9E%90';
+  
+  axios.get(url).then(html => {
+    let ulList = [];
+    const $ = cheerio.load(html.data);
+    const $bodyList = $("ul.msg_list_timeline li.today div.msg_timeline");
+    $bodyList.each(function(i, elem) {
+      ulList[i] = {
+          title: $(this).find("em.area_name").text(),
+          date: $(this).find("time").text(),
+          msg: $(this).find("span.dsc._text").text()
+      };
+    });
+
+    const data = {emergency: ulList.filter(n => n.title)};
+    return res.json(data);
+  })
+});
+
 module.exports = router;
