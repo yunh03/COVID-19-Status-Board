@@ -14,8 +14,7 @@ router.get('/status.json', function(req, res, next) {
       ulList[i] = {
           title: $(this).find("strong").text(),
           num: $(this).find("span.num").text().replace(/[^0-9]/g,"").replace(/\B(?=(\d{3})+(?!\d))/g, ","),
-          statue: $(this).find("span.before").text().replace( /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/g, '' ),
-          date: $(this).find("span.livedate").text()
+          statue: $(this).find("span.before").text().replace( /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/g, '' )
       };
     });
 
