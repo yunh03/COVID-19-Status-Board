@@ -1,4 +1,4 @@
-function reqListener () {
+$(document).ready(function reqListener () {
     var currentDate = new Date();
     var mydata = JSON.parse(this.responseText);
 
@@ -32,7 +32,8 @@ function reqListener () {
     document.getElementById("emergency-preview-1-1-1").innerHTML =
     mydata['emergency'][0].date;
 
-}
+})
+
 var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
 oReq.open("GET", "/status.json");
