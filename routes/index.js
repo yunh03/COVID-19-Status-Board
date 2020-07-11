@@ -3,7 +3,7 @@ var router = express.Router();
 const axios = require("axios");
 const cheerio = require('cheerio');
 
-router.get('/statues.json', function(req, res, next) {
+router.get('/status.json', function(req, res, next) {
   let url = 'http://ncov.mohw.go.kr/';
   
   axios.get(url).then(html => {

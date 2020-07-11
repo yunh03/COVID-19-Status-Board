@@ -27,6 +27,6 @@ function load() {
     }
     var oReq = new XMLHttpRequest();
     oReq.addEventListener("load", reqListener);
-    oReq.open("GET", "/statues.json");
+    oReq.open("GET", "/status.json");
     oReq.send();
 }
