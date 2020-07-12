@@ -142,6 +142,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     padding-top: 10px;
+    padding-right: 10px;
 }
 
 .c-emergency a {
@@ -151,10 +152,6 @@ body {
 
 .c-emergency a:hover {
     text-decoration: underline;
-}
-
-.c-emergency i {
-    padding-left: 10px;
 }
 
 .c-rules {
