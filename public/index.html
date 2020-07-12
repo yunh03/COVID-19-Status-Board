@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/covid.css">
     <link rel="stylesheet" href="assets/grid.css">
     <script src="assets/covid.js"></script>
+    <script src="assets/all-covid.js"></script>
     <script src="assets/emergency.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/nnh2zwy.css">
@@ -18,8 +19,26 @@
 <body>
     <div class="container">
         <section class="c-logo">
-            <h1>C<i class="fas fa-virus"></i>VID-19</h1>
+            <h1>COVID-19</h1>
             <p>실시간 COVID-19 현황을 표시합니다.</p>
+        </section>
+        <section class="c-a-status">
+            <h1>🌍 전 세계 피해 현황</h1>
+            <p><span id="alldate">🖐 업데이트 중</span></p>
+            <div class="row">
+                <div class="col-sm">
+                    <h1 class="c1"><span id="allcovid1">🖐</span></h1>
+                    <p>확진자 수</p>
+                </div>
+                <div class="col-sm">
+                    <h1 class="c2"><span id="allcovid2">🖐</span></h1>
+                    <p>사망자 수</p>
+                </div>
+                <div class="col-sm">
+                    <h1 class="c3"><span id="allcovid3">🖐</span></h1>
+                    <p>완치자 수</p>
+                </div>
+            </div>
         </section>
         <section class="c-status">
             <h1>🇰🇷 국내 피해 현황</h1>
@@ -41,6 +60,7 @@
         </section>
         <section class="c-emergency">
             <h1>💬 긴급재난문자</h1>
+            <p class="date"><span id="msgdate">🖐 업데이트 중</span></p>
             <div class="row">
                 <div class="col-sm">
                     <div class="msg-box">

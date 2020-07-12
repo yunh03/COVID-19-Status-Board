@@ -2,6 +2,9 @@ function reqListener () {
     var currentDate = new Date();
     var mydata = JSON.parse(this.responseText);
 
+    document.getElementById("msgdate").innerHTML =
+    currentDate.getMonth() + 1 + "월 " + currentDate.getDate() + "일 " + currentDate.getHours() + "시 " + currentDate.getMinutes() + "분 " + "업데이트 됨";
+
     document.getElementById("emergency-preview-1").innerHTML =
     mydata['emergency'][0].title;
 

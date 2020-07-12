@@ -23,6 +23,25 @@ router.get('/status.json', function(req, res, next) {
   })
 });
 
+router.get('/all-status.json', function(req, res, next) {
+  let url = 'https://www.worldometers.info/coronavirus/';
+  
+  axios.get(url).then(html => {
+    let ulList = [];
+    const $ = cheerio.load(html.data);
+    const $bodyList = $("div#maincounter-wrap");
+    $bodyList.each(function(i, elem) {
+      ulList[i] = {
+          title: $(this).find("h1").text(),
+          num: $(this).find("div.maincounter-number span").text().replace(/[^0-9]/g,"").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+      };
+    });
+
+    const data = {allcovid: ulList.filter(n => n.title)};
+    return res.json(data);
+  })
+});
+
 router.get('/emergency.json', function(req, res, next) {
   let url = 'https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EA%B8%B4%EA%B8%89%EC%9E%AC%EB%82%9C%EB%AC%B8%EC%9E%90';
   

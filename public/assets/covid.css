@@ -33,6 +33,42 @@ body {
     }
 }
 
+.c-a-status {
+    padding-top: 50px;
+}
+
+.c-a-status p {
+    font-size: 14px;
+    color: #797979;
+}
+
+.c-a-status .row {
+    margin-top: -20px;
+}
+
+.c-a-status .row h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.c-a-status .row .c1 {
+    color: #e06377;
+}
+
+.c-a-status .row .c2 {
+    color: #c83349;
+}
+
+.c-a-status .row .c3 {
+    color: #d9ad7c;
+}
+
+.c-a-status .row p {
+    margin-top: -20px;
+    text-align: center;
+    color: #797979;
+}
+
 .c-status {
     padding-top: 50px;
 }
@@ -78,6 +114,12 @@ body {
     color: #797979;
 }
 
+.c-emergency .date {
+    font-size: 14px;
+    color: #797979;
+    padding-bottom: 10px;
+}
+
 .c-emergency .msg-box {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -99,7 +141,7 @@ body {
     text-align: center;
     font-size: 14px;
     font-weight: 400;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .c-emergency a {
