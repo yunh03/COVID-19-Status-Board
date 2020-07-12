@@ -1,4 +1,4 @@
-$(document).ready(function reqListener () {
+function reqListener () {
     var currentDate = new Date();
     var mydata = JSON.parse(this.responseText);
 
@@ -23,16 +23,7 @@ $(document).ready(function reqListener () {
     document.getElementById("covid33").innerHTML =
     " " + mydata['covid'][1].statue;
 
-    document.getElementById("emergency-preview-1").innerHTML =
-    mydata['emergency'][0].title;
-
-    document.getElementById("emergency-preview-1-1").innerHTML =
-    mydata['emergency'][0].msg;
-
-    document.getElementById("emergency-preview-1-1-1").innerHTML =
-    mydata['emergency'][0].date;
-
-})
+}
 
 var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
