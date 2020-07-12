@@ -9,10 +9,10 @@ function reqListener () {
     mydata['allcovid'][0].num;
 
     document.getElementById("allcovid2").innerHTML =
-    mydata['allcovid'][2].num;
+    mydata['allcovid'][1].num;
 
     document.getElementById("allcovid3").innerHTML =
-    mydata['allcovid'][1].num;
+    mydata['allcovid'][2].num;
 
 }
 
