@@ -154,6 +154,10 @@ body {
     text-decoration: underline;
 }
 
+.c-emergency .fa-angle-right {
+    padding-left: 10px;
+}
+
 .c-rules {
     padding-top: 50px;
 }
