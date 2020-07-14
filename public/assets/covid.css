@@ -21,6 +21,15 @@ body {
     }
 }
 
+.c-logo a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.c-logo a:hover {
+    text-decoration: none;
+}
+
 .c-logo p {
     margin-top: -80px;
     font-size: 18px;
@@ -157,6 +166,22 @@ body {
 .c-emergency .fa-angle-right {
     padding-left: 10px;
 }
+
+.c-emergency table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #ffffff;
+  }
+  
+  .c-emergency td, th {
+    border: 1px solid #0f0f0f;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .c-emergency tr:nth-child(even) {
+    background-color: #0f0f0f;
+  }
 
 .c-rules {
     padding-top: 50px;
