@@ -171,17 +171,19 @@ body {
     border-collapse: collapse;
     width: 100%;
     color: #ffffff;
-  }
-  
-  .c-emergency td, th {
-    border: 1px solid #0f0f0f;
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+
+.c-emergency td, th {
+    border: 1px solid #0c0c0c;
     text-align: left;
     padding: 8px;
-  }
-  
-  .c-emergency tr:nth-child(even) {
+}
+
+.c-emergency tr:nth-child(even) {
     background-color: #0f0f0f;
-  }
+}
 
 .c-rules {
     padding-top: 50px;

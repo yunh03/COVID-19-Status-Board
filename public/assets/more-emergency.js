@@ -1,5 +1,10 @@
 function reqListener () {
+  var currentDate = new Date();
   var mydata = JSON.parse(this.responseText);
+
+  document.getElementById("msgdate").innerHTML =
+  currentDate.getMonth() + 1 + "월 " + currentDate.getDate() + "일 " + currentDate.getHours() + "시 " + currentDate.getMinutes() + "분 " + "업데이트 됨";
+
   txt = "";
   txt += "<table border='1'>"
   txt += "<tr><th>발송 지역</th><th>메시지 내용</th><th>발송 일시</th>"
