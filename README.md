@@ -1,2 +1,6 @@
-# COVID-19-Status-Board
-COVID-19 Status Board
+# 코로나19 상황판
+국내 코로나 확진자 수, 해외 코로나 확진자 수를 집계하여 한 웹 페이지에 표시합니다.
+# 개발 언어
+- Node.JS
+- HTML
+- CSS
