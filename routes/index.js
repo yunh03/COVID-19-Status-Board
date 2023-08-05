@@ -4,17 +4,17 @@ const axios = require("axios");
 const cheerio = require('cheerio');
 
 router.get('/status.json', function(req, res, next) {
-  let url = 'http://ncov.mohw.go.kr/';
+  let url = 'https://search.daum.net/search?w=tot&DA=TCN&t__nil_searchbox=btn&sug=&sugo=&sq=&o=&q=%EC%BD%94%EB%A1%9C%EB%82%9819';
   
   axios.get(url).then(html => {
     let ulList = [];
     const $ = cheerio.load(html.data);
-    const $bodyList = $("div.liveNum ul.liveNum li");
+    const $bodyList = $("div.wrap_info dl.info_condition");
     $bodyList.each(function(i, elem) {
       ulList[i] = {
-          title: $(this).find("strong").text(),
-          num: $(this).find("span.num").text().replace(/[^0-9]/g,"").replace(/\B(?=(\d{3})+(?!\d))/g, ","),
-          statue: $(this).find("span.before").text().replace( /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/g, '' )
+          title: $(this).find("dt.tit_info").text(),
+          num: $(this).find("dd.num_info span").text(),
+          statue: $(this).find("dd.increment_info").text()
       };
     });
 
@@ -33,7 +33,7 @@ router.get('/all-status.json', function(req, res, next) {
     $bodyList.each(function(i, elem) {
       ulList[i] = {
           title: $(this).find("h1").text(),
-          num: $(this).find("div.maincounter-number span").text().replace(/[^0-9]/g,"").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+          num: $(this).find("div.maincounter-number span").text()
       };
     });
 
@@ -43,17 +43,17 @@ router.get('/all-status.json', function(req, res, next) {
 });
 
 router.get('/emergency.json', function(req, res, next) {
-  let url = 'https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EA%B8%B4%EA%B8%89%EC%9E%AC%EB%82%9C%EB%AC%B8%EC%9E%90';
+  let url = 'https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EA%B8%B4%EA%B8%89%EC%9E%AC%EB%82%9C%EB%AC%B8%EC%9E%90&oquery=%EA%B8%B4%EA%B8%89%EC%9E%AC%EB%82%9C+%EB%AC%B8%EC%9E%90&tqi=iK3l3lprvhGssULUnjossssst7d-419737';
   
   axios.get(url).then(html => {
     let ulList = [];
     const $ = cheerio.load(html.data);
-    const $bodyList = $("ul.msg_list_timeline li.today div.msg_timeline");
+    const $bodyList = $("ul.disaster_list li div.inner");
     $bodyList.each(function(i, elem) {
       ulList[i] = {
-          title: $(this).find("em.area_name").text(),
-          date: $(this).find("time").text(),
-          msg: $(this).find("span.dsc._text").text()
+          title: $(this).find("div.disaster_info div.info_box strong.area").text(),
+          date: $(this).find("div.disaster_info div.info_box span.date").text(),
+          msg: $(this).find("p.disaster_text").text()
       };
     });
 

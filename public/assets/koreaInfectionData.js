@@ -8,21 +8,11 @@ function reqListener () {
     document.getElementById("covid1").innerHTML =
     mydata['covid'][0].num;
 
-    document.getElementById("covid11").innerHTML =
-    mydata['covid'][0].statue;
-
     document.getElementById("covid2").innerHTML =
-    mydata['covid'][2].num;
-
-    document.getElementById("covid22").innerHTML =
-    " " + mydata['covid'][2].statue;
-
-    document.getElementById("covid3").innerHTML =
     mydata['covid'][1].num;
 
-    document.getElementById("covid33").innerHTML =
-    " " + mydata['covid'][1].statue;
-
+    document.getElementById("covid3").innerHTML =
+    (parseInt(mydata['covid'][0].num.replace(/,/g, ''), 10) - parseInt(mydata['covid'][1].num.replace(/,/g, ''), 10)).toLocaleString()
 }
 
 var oReq = new XMLHttpRequest();
